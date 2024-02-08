@@ -8,6 +8,7 @@ import TagHeader from '@/components/TagHeader';
 import { features } from '@/config/features';
 import CTA from '@/components/CTA';
 import Testimonies from '@/components/Testimonies';
+import PrintingProcess from '@/components/PrintingProcess';
 
 export const metadata: Metadata = {
   title: "Our Services",
@@ -25,7 +26,7 @@ const page = () => {
         <div className='mx-auto max-w-4xl'>
           <TagHeader headerTagline={headerTagline} Tagline={Tagline} />
         </div>
-        <div className='w-full my-5 p-2 mx-auto md:grid md:grid-cols-2 md:gap-3 lg:grid lg:grid-cols-4 lg:gap-3'>
+        <div className='w-full my-5 px-4 py-2 mx-auto md:grid md:grid-cols-2 md:gap-3 lg:grid lg:grid-cols-4 lg:gap-3'>
             {
               servicesdb.map((service, index)=>(
                 <div className="w-full my-3" key={ index }>
@@ -64,6 +65,7 @@ const page = () => {
               }
           </div>
         </div>
+        <PrintingProcess />
         <CTA />
         <Testimonies />
     </div>

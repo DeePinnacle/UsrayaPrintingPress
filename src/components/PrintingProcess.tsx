@@ -14,7 +14,7 @@ const PrintingProcess = () => {
             <div className='w-full max-w-4xl p-2 md:grid md:grid-cols-2 md:gap-3 lg:grid-cols-3'>
                 {
                     processes.map((process)=>(
-                        <div key={process.number} className='bg-white min-h-96 w-full px-2 py-10 border border-solid border-orange-500 my-3 rounded-2xl shadow-md'>
+                        <div key={process.number} className='bg-white min-h-96 w-full px-2 py-10 border border-solid border-slate-100 my-3 rounded-2xl shadow-md lg:px-10'>
                             <p className='text-center text-2xl font-bold mb-4 text-primary'>{process.title}</p>
                             <div className='w-24 h-24 bg-slate-50 rounded-full flex items-center justify-center my-4 mx-auto'>
                                 <p className='font-bolder text-orange-500 text-5xl'>{process.number}</p>
@@ -22,7 +22,7 @@ const PrintingProcess = () => {
                             <div className='p-2 my-2'>
                                 <p className='text-muted-foreground text-center'>{process.content}</p>
                             </div>
-                            <Button asChild className='bg-orange-500 w-full my-3 rounded-full hover:border hover:border-solid hover:border-orange-500 hover:transparent group'>
+                            <Button asChild className='bg-orange-500 w-full cursor-pointer my-3 rounded-full hover:bg-transparent hover:border hover:border-solid hover:border-orange-500 hover:transparent group'>
                                 <div className='flex flex-row gap-3 justify-between items-center'>
                                     <Link href='/Contact' className='group-hover:text-orange-500'>Get Started</Link>
                                     <div className='bg-orange-300 w-16 h-7 flex items-center justify-center rounded-full'>

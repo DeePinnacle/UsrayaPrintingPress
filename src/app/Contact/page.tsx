@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Header from "../_components/Header";
-import ContactHeaderImage from '/public/T-shirt-01.jpg';
+import ContactHeaderImage from '/public/jotter.webp';
 import ContactImage from '/public/newUser4.jpg';
 import Image from 'next/image';
 import Link from 'next/link';

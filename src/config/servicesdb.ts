@@ -11,7 +11,7 @@ import ShirtPrinting from '/public/T-shirt-mockup.jpg';
 import Mug from '/public/mug-printing.webp';
 import Signage from '/public/signage.webp';
 import RollUpBanner from '/public/roolupbanner.webp';
-import Flyers from '/public/flyers.jpg';
+import Flyers from '/public/flyer.jpg';
 import ReflectiveJacket from '/public/reflectivejacket.webp';
 import Invoice from '/public/invoice.jpg';
 

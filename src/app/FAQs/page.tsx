@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Poster from '/public/poster.jpg';
+import Flyer from '/public/flyer.jpg';
 import Header from '../_components/Header';
 import AboutSection from '@/components/AboutSection';
 import FAQs from '@/components/FAQs';
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 }
 
 const FAQsPage = () => {
-    const image = Poster;
+    const image = Flyer;
     const text = 'Frequently Asked Questions'
     return (
         <>

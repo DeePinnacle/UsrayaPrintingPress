@@ -3,6 +3,7 @@ import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Navbar/Header";
 import Footer from "@/components/Footer/Footer";
+import TopContact from '@/components/TopContact';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className='sticky top-0 z-50'>
+          <TopContact />
           <Header />
         </div>
         {children}

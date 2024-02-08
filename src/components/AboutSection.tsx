@@ -7,22 +7,22 @@ import  {
         } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
-import AboutImage from '/public/HeroImage-01.webp';
+import AboutImage from '/public/T-shirt-mockup.jpg';
 import { data } from '@/config/data';
 import { FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 
 const AboutSection = () => {
-    const headerText='About Us';
-    const headerTagline = 'Who We Are';
-    const Tagline="Crafting Impressions, Inspiring Connections: Where Precision Meets Passion.";
+    const headerText='About Us'
+    const headerTagline = 'Who We Are'
+    const Tagline="Crafting Impressions, Inspiring Connections: Where Precision Meets Passion."
     return (
         <GenWrapper>
             <TagHeader headerText={headerText} headerTagline={headerTagline} Tagline={Tagline} />
             {/* flex inner container */}
             <div className='w-full max-w-4xl my-3'>
-                <div className='md:grid grid-cols-2 gap-3'>
+                <div className='md:grid md:grid-cols-2 md:gap-3 lg:bg-white lg:py-20 lg:px-5 lg:rounded-md lg:shadow'>
                     {/* about text starts */}
-                    <div className='px-2 py-5 bg-slate-50 rounded-md'>
+                    <div className='px-2 py-5 bg-slate-50 rounded-md md:h-[28.125rem] md:px-4 md:py-10 lg:px-10'>
                         <p className='max-w-prose leading-relaxed'>
                             <span className='text-4xl font-bold'>At</span> <span className='font-bold text-xl text-orange-500'>Usraya Printing Press, 
                             </span> we&apos;re more than just a printing press, 
@@ -54,7 +54,7 @@ const AboutSection = () => {
                     
                     {/* about image starts */}
 
-                    <div className='relative h-72 w-72 overflow-hidden rounded-tr-3xl rounded-bl-3xl my-3 mx-auto  md:order-first'>
+                    <div className='relative h-72 w-72 overflow-hidden rounded-tr-3xl rounded-tl-3xl rounded-br-3xl rounded-bl-3xl my-3 mx-auto md:order-first md:h-[28.125rem] md:w-full md:my-0'>
                         <Image 
                         src={AboutImage}
                         alt='about-us-image'
@@ -70,7 +70,7 @@ const AboutSection = () => {
                 <div className='my-8 p-2 md:grid md:grid-cols-3 md:gap-3'>
                     {
                         data.map((item, index)=>(
-                            <div key={ index } className='bg-orange-200 px-2 py-10 mx-auto my-3 rounded-lg'>
+                            <div key={ index } className='bg-white px-2 py-10 mx-auto my-3 rounded-lg'>
                                 <div className='bg-orange-300 w-16 h-16 flex flex-row items-center justify-center mx-auto rounded-xl'>
                                     {<item.icon className='text-orange-500 h-24' />}
                                 </div>
